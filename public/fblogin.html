@@ -8,7 +8,7 @@
   <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.41.min.js"></script>
   <script>
   
-    AWS.config.region = 'us-west-2';
+    AWS.config.region = 'us-********';
   
     (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -20,7 +20,7 @@
 
     window.fbAsyncInit = function() {
       FB.init({
-        appId      : '1851663918495597',
+        appId      : '******************',
         cookie     : true, 
                            
         xfbml      : true, 
@@ -39,7 +39,7 @@
         testAPI();
 
         AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-          IdentityPoolId: 'us-west-2:f5d5c955-2c45-430b-9e2d-17d29edd6d0a',
+          IdentityPoolId: '***********************************',
           Logins: { 'graph.facebook.com': response.authResponse.accessToken }
         });
 
