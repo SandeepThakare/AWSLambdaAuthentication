@@ -28,7 +28,7 @@ exports.handler = (event, context, callback) => {
       else {
          // If we get data back, we'll do some modifications to make it easier to read
          for(var i = 0; i < data.Items.length; i++){
-           RESPONSE.OK.message.push({'email': data.Items[i].email.S});
+           RESPONSE.OK.message.push({'emails': data.Items[i].emails.S});
          }
            callback(null, RESPONSE.OK);
       }

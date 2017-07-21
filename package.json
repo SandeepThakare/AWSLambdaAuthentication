@@ -1,7 +1,9 @@
 {
-	"name" : "serverless-stories-lambda",
-	"version" : "1.0.0",
-	"dependencies" : {
-		"http-server" : "latest"
+	"name": "serverless-stories-lambda",
+	"version": "1.0.0",
+	"dependencies": {
+		"aws-api-gateway-client": "^0.2.7",
+		"axios": "^0.16.2",
+		"http-server": "latest"
 	}
 }
