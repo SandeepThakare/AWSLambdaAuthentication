@@ -58,6 +58,7 @@ function loadAdmin(){
 $('#newsletter').submit(function(e){
   e.preventDefault();
 
+  //your api key from cognito
   var client = apigClientFactory.newClient({apiKey: '**********************************'});
 
   var email=$('#emails').val();
